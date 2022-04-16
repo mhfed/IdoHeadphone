@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgot.css">
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Find your account</h2>
+            <form action="" name="form" method="post" action="">
+                <div class="inputBox">
+                    <p>Please enter your email or phone number to search for your account.</p>
+                    <input autocomplete="off" type="text" name="test" placeholder="Your email or phone number" onfocus="active()">
+                    <div id="message">Please do not leave this field blank</div>
+                </div>
+            </form>
+            <div class="button">
+                <div class="btn-cancel">
+                    <input type="button" name="action" value="Cancel" onclick="window.history.go(-1); return false;">
+                </div>
+                <div class="btn-ok">
+                    <input type="submit" name="submit" value="OK" onclick="return validated()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/forgot.js"></script>
+</body>
+
+</html>

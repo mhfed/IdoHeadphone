@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.container {
+    position: relative;
+    width: 360px;
+    min-height: 400px;
+    background: rgba((255), 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(45deg, #ff0047, #6eff00);
+    pointer-events: none;
+    border-radius: 16px;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, #ff0047, #6eff00);
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: blur(60px) hue-rotate(0deg);
+    }
+    100% {
+        filter: blur(60px) hue-rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.form h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 0;
+    font-family: serif;
+}
+
+::placeholder {
+    color: #eee;
+}
+
+
+/* =======================BUTTON======================= */
+
+form .button {
+    height: 45px;
+    margin: 25px 0;
+    position: relative;
+    overflow: hidden;
+    color: #03e9f4;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    filter: hue-rotate(100deg);
+    transition: 0.5s;
+    animation: animateImpo 5s linear;
+}
+
+@keyframes animateImpo {
+    0% {
+        filter: blur(50px) hue-rotate(360deg);
+    }
+    100% {
+        filter: blur(50px) hue-rotate(0deg);
+    }
+}
+
+form .button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+form .button span {
+    position: absolute;
+    display: block;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: #03e9f4;
+    background: transparent;
+}
+
+form .button input:hover {
+    /* background: linear-gradient(-135deg, #9b59b6, #71b7e6, #9b59b6); */
+    cursor: pointer;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    z-index: 3;
+}
+
+form .button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1.5s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+form .button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+form .button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+form .button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* ==================== */
+
+
+/* .form .button input[type="submit"] {
+    background: transparent ;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 8px 0;
+    margin: 10px 0 16px 0;
+} */
+
+
+/* ==========================END BUTTON ==================*/
+
+.form p {
+    color: #fff;
+    padding-top: 4px;
+}
+
+.form p a:hover {
+    background: rgb(133, 9, 0);
+    color: #fff;
+}
+
+.form p a {
+    background: rgba(255, 255, 255, 0.05);
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message {
+    color: #ff0048;
+    display: none;
+}

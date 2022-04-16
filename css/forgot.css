@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    min-height: 260px;
+    background: rgba((255), 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(45deg, #ff0047, #6eff00);
+    pointer-events: none;
+    border-radius: 16px;
+    z-index: -2;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, #ff0047, #6eff00);
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes animate {
+    0% {
+        filter: blur(60px) hue-rotate(0deg);
+    }
+    100% {
+        filter: blur(60px) hue-rotate(360deg);
+    }
+}
+
+form {
+    text-align: center;
+}
+
+.form h2 {
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 0 12px 0;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+form .inputBox input {
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+form .inputBox p {
+    color: #111;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 80px 0 0;
+    border-top: 1px solid #ccc;
+}
+
+.btn-cancel {
+    padding-right: 20px;
+}
+
+.button input {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #111;
+    background: linear-gradient(45deg, #2eff5c93, #1fd3eb);
+    padding: 8px 16px;
+}
+
+.button input:hover {
+    cursor: pointer;
+}
+
+#message {
+    color: #ff0048;
+    display: none;
+}

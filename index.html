@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <ul class="menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Khuyến Mãi</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--End header-left-->
+            <div class="header-mid">
+                <a href="">
+                    <img src="images/logo.png" alt="Đây là logo" class="logo img-fluid">
+                </a>
+            </div>
+            <!--End header-mid-->
+            <div class="header-right">
+                <div class="icon searchIcon">
+                    <i class="ti-search"></i>
+                    <div class="search">
+                        <form action="" class="form-search">
+                            <input type="text" class="form-search__input" placeholder="Enter keyword...">
+                            <input type="submit" class="form-search__button" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="icon userIcon">
+                    <i class="ti-user"></i>
+                    <div class="user">
+                        <div class="login"><a href="login.html">Đăng nhập</a></div>
+                        <div class="regis"><a href="registration.html">Đăng kí</a></div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="ti-shopping-cart"></i>
+                    <span id="quantity">0</span>
+                </div>
+            </div>
+            <!--End header-right-->
+        </header>
+        <div id="showAndHide">
+            <div class="banner img-fluid">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="images/banner/banner1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner/banner2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner/banner3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner/banner4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <!--End banner-->
+            <div class="type-of-product">
+                <ul class="type">
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Beginner-Audiophiles-Before-Hover-2020.svg?v=1600676102" alt=""></a>
+                                <h5>
+                                    <a href="">Beginner</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Wireless-Headphones-Before-Hover-2020.svg?v=1601880459" alt=""></a>
+                                <h5>
+                                    <a href="">Headphones</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Wireless-Earphones-Before-Hover-2020.svg?v=1600429776" alt=""></a>
+                                <h5>
+                                    <a href="">Wireless</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/In-Ears-Before-Hover-2020.svg?v=1600430159" alt=""></a>
+                                <h5>
+                                    <a href="">In-Ears</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Extra-Bass-Before-Hover-2020.svg?v=1600432281" alt=""></a>
+                                <h5>
+                                    <a href="">Extra Bass</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/IEMs-Before-Hover-2020.svg?v=1600430493" alt=""></a>
+                                <h5>
+                                    <a href="">IEMs</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Noise-Cancellation-Before-Hover-2020.svg?v=1600678306" alt=""></a>
+                                <h5>
+                                    <a href="">Audiophiles</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="inner-type">
+                                <a href=""><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Gaming-Before-Hover-2020.svg?v=1600432087" alt=""></a>
+                                <h5>
+                                    <a href="">Gaming</a>
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--End type-->
+            <div class="products">
+                <div class="product">
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone1.png" alt="" class="boxx img-fuild">
+                            <h2>Focal Clear</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">1.500.000</div>
+                            <a href="#">Add to card</a>
+                        </div>
+                    </div> -->
+                    <!--End card-->
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone2.png" alt="" class="boxx img-fuild">
+                            <h2>FiiO FH5s</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">1.200.000</div>
+                            <a href="#">Add to card</a>
+                        </div>
+                    </div> -->
+                    <!--End card-->
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone3.png" alt="" class="boxx img-fuild">
+                            <h2>Epic Air</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">1.900.000</div>
+                            <a href="#">Add to card</a>
+                        </div>
+                    </div> -->
+                    <!--End card-->
+                </div>
+                <!--End product-->
+                <div class="product">
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone4.png" alt="" class="boxx img-fuild">
+                            <h2>Go Air</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">2.200.000</div>
+                            <a href="#">Add to card</a>
+                            <p>còn hàng</p>
+    
+                        </div>
+                    </div> -->
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone5.png" alt="" class="boxx img-fuild">
+                            <h2>Sony WI</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">1.700.000</div>
+                            <a href="#">Add to card</a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="card">
+                        <div class="imgBx">
+                            <img src="images/product/headphone6.png" alt="" class="boxx img-fuild">
+                            <h2>Air ANC</h2>
+                        </div>
+                        <div class="content">
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Color :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="price">990.000</div>
+                            <a href="#">Add to card</a>
+                        </div>
+                    </div> -->
+                    <!--End product-->
+                    <!--End product-->
+                </div>
+                <!--End product-->
+            </div>
+        </div>
+        <!--Start Cart-->
+        <div id="cart" class="hide animationCart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Product Name</th>
+                        <th>Product Img</th>
+                        <th>Product Price</th>
+                        <th>Product Status</th>
+                    </tr>
+                </thead>
+                <!-- end thead -->
+                <tbody id="table-data"></tbody>
+                <!-- end tbody -->
+                <tfoot id="table-foot"></tfoot>
+                <!-- end tfoot -->
+            </table>
+            <button id="btn-remove">Remove Cart</button>
+        </div>
+        <!--End Cart-->
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/MHFPL/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MHFPL/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MHFPL/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MHFPL/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MHFPL/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+
+            <div class="copyright">Designed by Hiếu Minh PH17303</div>
+
+            <!-- từ từ rồi tính -->
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
